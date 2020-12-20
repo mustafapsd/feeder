@@ -1,0 +1,21 @@
+<div class="container">
+  <img src="/assets/logo.png" alt="logo">
+  <div class="title">
+   <b>Pet Food Machine That Can be Controlled Online</b> 
+  </div>
+
+  <div class="info" *ngIf="!loading">
+   <h6>Stock: {{stock}}</h6> 
+   <h6>Container: {{container}}</h6>
+    <h6>Last Updated Date: {{lastupdate}}</h6>
+   <h6><b>How many grams of food would you like in the container?</b> </h6>
+   <input type="number" [(ngModel)]="willadd">
+
+   <button (click)="post()">FEED MY PET</button>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <img src="/assets/logo.png" alt="logo">
+    <h1>Welcome to The <b>Best Project</b> of This Year The Best Teachers! <br> <b>Hail To The Best Teachers!</b></h1> 
+  </div>
+</div>
